@@ -46,7 +46,7 @@ ifdef CONFIG_PACKAGE_kmod-dpns_acl
 	$(CP) ../sf_eth/dpns_acl/src/dpns_acl_msg.h	$(PKG_BUILD_DIR)/
 endif
 
-ifdef CONFIG_TARGET_siflower_sf21h8898_mpw0
+ifdef CONFIG_TARGET_siflower_sf21h8898_v1
 	$(CP) ../sf_eth/dpns_genl/src/sf_genl_msg.h    $(PKG_BUILD_DIR)/
 else
 	$(CP) ../sf_eth/include/sf_genl_msg.h          $(PKG_BUILD_DIR)/

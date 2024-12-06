@@ -16,7 +16,7 @@ ifdef CONFIG_PACKAGE_kmod-dpns_acl
 	GENL_FILES += acl.c
 endif
 
-ifndef CONFIG_TARGET_siflower_sf21h8898_mpw0
+ifndef CONFIG_TARGET_siflower_sf21h8898_v1
 	GENL_FILES += nat.c vlan.c router.c common.c
 endif
 

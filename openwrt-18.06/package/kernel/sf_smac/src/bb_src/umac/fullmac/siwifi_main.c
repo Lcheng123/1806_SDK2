@@ -25,7 +25,7 @@
 #include <sfax8_factory_read.h>
 #endif
 #include "siwifi_defs.h"
-#include "siwifi_mpw0.h"
+#include "siwifi_v1.h"
 #include "siwifi_msg_tx.h"
 #include "siwifi_tx.h"
 #include "reg_access.h"

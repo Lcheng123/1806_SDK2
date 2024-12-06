@@ -25,7 +25,7 @@
 #include "lmac_msg.h"
 
 #include "reg_mdm_cfg.h"
-#include "siwifi_mpw0.h"
+#include "siwifi_v1.h"
 #include "siwifi_lmac_glue.h"
 #include "siwifi_cfgfile.h"
 #include "ipc_host.h"
@@ -1520,7 +1520,7 @@ static ssize_t siwifi_dbgfs_cali_table_read(struct file *file,
 {
     struct siwifi_hw *priv = private_data_proc_debug(file->private_data);
     struct phy_aetnensis_cfg_tag *phy_tag = (struct phy_aetnensis_cfg_tag *)&priv->phy_config;
-    struct mpw0_plat_data *plat_data = (struct mpw0_plat_data *)&priv->plat->priv;
+    struct v1_plat_data *plat_data = (struct v1_plat_data *)&priv->plat->priv;
     struct siwifi_factory_info *factory_info = &priv->factory_info;
     uint8_t *tx_pow_cali_gain_list = NULL;
     int channel_lb[13] = {2412, 2417, 2422, 2427, 2432, 2437, 2442, 2447, 2452, 2457, 2462, 2467, 2472};

@@ -33,7 +33,7 @@
 #include "rf_pl_ref.h"
 //todo:ycchang: sync with siwifi_platform.h
 #if 1
-#include "siwifi_mpw0.h"
+#include "siwifi_v1.h"
 #else
 #include "siwifi_platform.h"
 #endif

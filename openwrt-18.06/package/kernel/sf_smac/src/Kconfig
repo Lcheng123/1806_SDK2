@@ -10,8 +10,8 @@ config WIRELESS_VENDOR_SIFLOWER
 config SF16A18_WIFI_LA_ENABLE
     bool
 
-config SF16A18_WIFI_MPW1_FPGA
-	bool "SF16A18 MPW1 build for fpga-v7"
+config SF16A18_WIFI_V2_FPGA
+	bool "SF16A18 V2 build for fpga-v7"
 	default n
 
 config SF16A18_WIFI_MAC_HOST_OFFLOAD
@@ -33,7 +33,7 @@ config SF16A18_WIFI_HB_LA_ENABLE
 
 config SF16A18_LMAC_USE_M_SFDSP
 	bool "enabled m_SFDSP lmac booting,make sure you have m_SFDSP core support"
-	depends on !CONFIG_SF16A18_MPW0
+	depends on !CONFIG_SF16A18_V1
 	default y
 
 config SF16A18_LMAC_USE_INTERPTIV

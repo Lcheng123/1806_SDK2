@@ -1,7 +1,6 @@
 /*
 * Description
 *
-* Copyright (C) 2016-2020 Qin.Xia <qin.xia@siflower.com.cn>
 *
 * Siflower software
 */
@@ -807,7 +806,7 @@ static int intel_rgmii_init(int port)
 	return 0;
 }
 
-// #ifdef CONFIG_SF19A28_MPW1
+// #ifdef CONFIG_SF19A28_V2
 static int intel_port_rgmii_dalay_set(int port, int txDelay, int rxDelay)
 {
 	if ((txDelay > 7) || (rxDelay > 7))
@@ -947,7 +946,7 @@ void intel7084_init(struct sf_eswitch_priv *pesw_priv)
 	if(pesw_priv->model == INTEL7082) {
 		intel_port_rgmii_dalay_set(5, 0, 0);
 	}
-#ifdef CONFIG_SF19A28_MPW1
+#ifdef CONFIG_SF19A28_V2
 	intel_port_rgmii_dalay_set(5, 2, 0);
 #endif
 	intel7084_enable_all_phy(pesw_priv);
